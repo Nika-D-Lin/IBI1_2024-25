@@ -1,4 +1,0 @@
-Hello, my name is Li Yilin.
-I like drinking tea and eating chocolate biscuits.
-I am enjoying playing tennis. 
-I am happy that I can push my repo from Visual Studio Code to GitHub
