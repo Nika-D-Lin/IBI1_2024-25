@@ -1,24 +1,11 @@
 import matplotlib.pyplot as plt
-import numpy as np
-
-languages = ["JavaScript", "HTML", "Python", "SQL", "TypeScript"]
-users = {
-    "JavaScript": 62.3,
-    "HTML": 52.9,
-    "Python": 51,
-    "SQL": 51,
-    "TypeScript": 38.5
-}
-x = np.arange(len(languages)) 
-y = list(users.values())     
-fig, ax = plt.subplots()
-rects = ax.bar(x, y, width=0.5, label="Usage Percentage", color="skyblue")
-ax.bar_label(rects, padding=3)
-ax.set_ylabel("Percentage (%)")
-ax.set_title("Users by Programming Language")
-ax.set_xticks(x)
-ax.set_xticklabels(languages)
-
-ax.legend()
-ax.set_ylim(0, 100)
+language_data = {"JavaScript": 62.3, "HTML": 52.9, "Python": 51, "SQL": 51, "TypeScript": 38.5}
+print("Programming Language Usage Data:", language_data)
+plt.figure(figsize=(8, 5))
+plt.bar(language_data.keys(), language_data.values(), color=['blue', 'green', 'red', 'purple', 'orange'])
+plt.xlabel("Programming Languages")
+plt.ylabel("Users (%)")
+plt.title("Programming Language Usage Percentage")
+plt.ylim(0, 70)
+plt.grid(axis="y", linestyle="--", alpha=1)
 plt.show()
