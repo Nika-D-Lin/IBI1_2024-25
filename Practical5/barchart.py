@@ -9,3 +9,9 @@ plt.title("Programming Language Usage Percentage")
 plt.ylim(0, 70)
 plt.grid(axis="y", linestyle="--", alpha=1)
 plt.show()
+
+selected_language = "Python"
+if selected_language in language_data:
+    print(f"The percentage of developers using {selected_language} is {language_data[selected_language]}%.")
+else:
+    print("Selected language not found in the dataset.")
