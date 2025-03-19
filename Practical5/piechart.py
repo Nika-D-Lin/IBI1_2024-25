@@ -1,6 +1,4 @@
-
 import matplotlib.pyplot as plt
-
 uk_countries = {"England": 57.11, "Wales": 3.13, "Northern Ireland": 1.91, "Scotland": 5.45}
 china_provinces = {"Zhejiang": 65.77, "Fujian": 41.88, "Jiangxi": 45.28, "Anhui": 61.27, "Jiangsu": 85.15}
 sorted_uk = sorted(uk_countries.items(), key=lambda x: x[1], reverse=True)
