@@ -18,4 +18,3 @@ while progress>=0:
 	if first_n == second_n:
 		print(progress)
 		break
-
