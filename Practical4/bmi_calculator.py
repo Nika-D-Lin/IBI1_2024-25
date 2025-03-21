@@ -4,8 +4,8 @@ And you will know whether you are considered underweight, normal or obese.
 '''
 weight = float(input("input your weight(kg):"))
 height = float(input("input your height(m):"))
-BMI = round(weight/height**2,2)
-if BMI > 30:
+BMI = round(weight/height**2,2) #keep two decimals
+if BMI > 30: #use f to put them into one sentence
     print(f"Your BMI is {BMI}. You are obese.")
 elif BMI < 18.5:
     print(f"Your BMI is {BMI}.You are underweight.")
