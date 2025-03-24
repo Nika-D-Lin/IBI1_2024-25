@@ -8,10 +8,9 @@ print(sorted_china)
 
 fig, axes = plt.subplots(1, 2, figsize=(12, 6)) #the style of the graph is one row and two line, and the size is 12 in width and 6 in height
 axes[0].pie(uk_countries.values(), labels=uk_countries.keys(), autopct='%.1f%%', startangle=140, colors=["blue", "orange", "green", "red"])
-#pie(x,y,autopct means that)
-axes[0].set_title("Population Distribution in UK Countries")
+#pie(x,y,autopct means to display a percentage wiiith one decimal place,startangle is the start tangle of the piechart line,color)
+axes[0].set_title("Population Distribution in UK Countries") #the title of this piechart
 axes[1].pie(china_provinces.values(), labels=china_provinces.keys(), autopct='%.1f%%', startangle=140, colors=["purple", "cyan", "yellow", "pink", "gray"])
 axes[1].set_title("Population Distribution in Zhejiang-Neighbouring Provinces")
 
-plt.tight_layout()
 plt.show()
