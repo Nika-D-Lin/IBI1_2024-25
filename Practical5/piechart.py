@@ -12,5 +12,5 @@ axes[0].pie(uk_countries.values(), labels=uk_countries.keys(), autopct='%.1f%%',
 axes[0].set_title("Population Distribution in UK Countries") #the title of this piechart
 axes[1].pie(china_provinces.values(), labels=china_provinces.keys(), autopct='%.1f%%', startangle=140, colors=["purple", "cyan", "yellow", "pink", "gray"])
 axes[1].set_title("Population Distribution in Zhejiang-Neighbouring Provinces")
-
+#axes[0] means the first and axes[1] means the second
 plt.show()
