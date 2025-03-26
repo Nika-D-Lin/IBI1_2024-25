@@ -21,9 +21,9 @@ for i in range(time_points):
     new_recovery = np.random.choice(range(2),I,p=[1-gamma,gamma]).sum()
     new_infection = np.random.choice(range(2),S,p=[1-beta*(I/population),beta*(I/population)]).sum()
     
-    S = max(S - new_infection,0) #S is smaller and smaller, so we need to avoid negtive number
-    I = max(I - new_recovery + new_infection,0) #I is too small, so we need to avoid negtive number
-    R = min(R + new_recovery,population) #R is bigger and bigger, so we need to avoid it beyond population
+    S = max(S - new_infection,0)                  #S is smaller and smaller, so we need to avoid negtive number
+    I = max(I - new_recovery + new_infection,0)   #I is too small, so we need to avoid negtive number
+    R = min(R + new_recovery,population)          #R is bigger and bigger, so we need to avoid it beyond population
 
     S_list.append(S)
     I_list.append(I)
