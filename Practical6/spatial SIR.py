@@ -11,19 +11,19 @@ outbreak = np.random.choice(range(100),2)
 population[outbreak[0],outbreak[1]] = 1 #infected poeple
 plt.imshow(population, cmap='viridis', interpolation='nearest')
 plt.colorbar(label='Population Status')
-plt.show()
+plt.show() #show the origin one
 
 for t in range(time_points):
     new_population = population.copy()  #copy the current state
 
     for x in range(100):
-        for y in range(100):
+        for y in range(100): #use two circulations to traverse the matrix population
             if population[x, y] == 1:  #infected people
                 for dx, dy in [(-1,-1), (-1,0), (-1,1), (0,-1), (0,1), (1,-1), (1,0), (1,1)]: #infect surround 8 people
                     X = x + dx
                     Y = y + dy
                     if 0 <= X < 100 and 0 <= Y < 100: #avoid value beyond the range
-                        if population[X, Y] == 0 and np.random.choice(range(100))/100 <= beta:
+                        if population[X, Y] == 0 and np.random.choice(range(100))/100 <= beta: #30% probability to be infected
                             new_population[X, Y] = 1  
             
                 if np.random.choice(range(100))/100 <= gamma: #infected ones may recover
@@ -35,5 +35,5 @@ for t in range(time_points):
         plt.figure(figsize=(6,4), dpi=150)
         plt.imshow(population, cmap='viridis', interpolation='nearest')
         plt.colorbar(label='Population Status')
-        plt.title(f"Time {t+1}")
+        plt.title(f"Time {t+1}") #t begins at 0, so the real time should be added one
         plt.show()
