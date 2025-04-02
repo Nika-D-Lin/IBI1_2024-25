@@ -19,5 +19,5 @@ if current_gene: #to check the final one
 
 input2 = open(r'C:\Users\lenovo\OneDrive - International Campus, Zhejiang University\桌面\Github\IBI1_2024-25\Practical7\tata_genes.fa','w')
 for gene_name, sequence in out_put:
-        if re.search(r'TATATAT' or 'TATATAA' or 'TATAAAT' or 'TATAAAA', sequence):
+        if re.search(r'TATA[AT]A[AT]', sequence):
             input2.write(f'> {gene_name}\n{sequence}\n')
