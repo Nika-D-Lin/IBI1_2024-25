@@ -11,3 +11,4 @@ class patients(): #set the class
 #example:
 patient1 = patients(patient_name = "Nika", age = 19, date_of_latest_admission = "2025.4.7", medical_history="Depressive disorder")
 patient1.print_details()
+#it will print: 'Name: Nika, Age: 19, Admission Date: 2025.4.7, Medical History: Depressive disorder'
