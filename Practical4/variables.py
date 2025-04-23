@@ -16,3 +16,11 @@ X = True
 Y = False
 W = X and Y
 #W is False
+''''
+Truth table:
+|  X  |  Y  |W(X and Y)|X or Y|
+|True |True |True      |True  |
+|True |False|False     |True  |
+|False|True |False     |True  |
+|False|False|False     |False |
+'''
