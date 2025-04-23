@@ -1,0 +1,2 @@
+Which country in 1990 has the highest DALYs?
+Eritrea has the highest DALYs: 115120.37
