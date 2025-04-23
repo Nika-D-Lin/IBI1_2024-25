@@ -1,3 +1,8 @@
+import datetime
+
+# record the start time
+start_time = datetime.datetime.now()
+
 import re
 #when find the next name, append the last name and seqyence
 input = open(r"C:\Users\lenovo\Downloads\Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa",'r')
@@ -21,3 +26,10 @@ input2 = open(r'C:\Users\lenovo\OneDrive - International Campus, Zhejiang Univer
 for gene_name, sequence in out_put: #use two new varieties to meet the two kinds--current_gene and current_sequence
         if re.search(r'TATA[AT]A[AT]', sequence): #use [] to search 'TATATAT' or 'TATATAA' or 'TATAAAT' or 'TATAAAA'
             input2.write(f'> {gene_name}\n{sequence}\n')
+
+# record the finish time
+end_time = datetime.datetime.now()
+
+# calculate the running time
+elapsed_time = end_time - start_time
+print(f"Elapsed time: {elapsed_time}")
