@@ -1,6 +1,6 @@
 # What does this piece of code do?
 # Answer:
-#Find out how many times does it take to generated the same number twice in a row.
+# Find out how many times does it take to generated the same number (between 1 and 6) twice in a row
 # Import libraries
 # randint allows drawing a random number,
 # e.g. randint(1,5) draws a number between 1 and 5
