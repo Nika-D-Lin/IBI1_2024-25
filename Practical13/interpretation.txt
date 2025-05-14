@@ -1,0 +1,4 @@
+lenth: 222
+subcellular	localisation: Mitochondrion matrix
+The	range of percentage identities: 83.3 - 100
+After the comparation, it turned out to be the most	closely	related two are human and mouse.
