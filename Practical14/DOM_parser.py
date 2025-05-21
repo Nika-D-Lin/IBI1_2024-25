@@ -43,3 +43,5 @@ for ns, info in max_is_a.items():
 end_time = time.time()
 dom_duration = end_time - start_time
 print(f"\nDOM parsing took {dom_duration:.4f} seconds")
+
+#It takes about 9.4 seconds

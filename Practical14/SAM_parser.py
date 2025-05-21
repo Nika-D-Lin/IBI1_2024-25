@@ -68,6 +68,8 @@ end_time = time.time()
 sax_duration = end_time - start_time
 print(f"\nSAX parsing took {sax_duration:.4f} seconds")
 
-# SAX was faster than DOM (or vice versa), depending on results.
-# SAX is more memory-efficient because it reads the XML incrementally.
-# DOM is easier to implement but slower and more memory-hungry for large files.
+#It takes about 2.0 seconds
+
+#SAX was faster than DOM (or vice versa), depending on results.
+#SAX is more memory-efficient because it reads the XML incrementally.
+#DOM is easier to implement but slower and more memory-hungry for large files.
